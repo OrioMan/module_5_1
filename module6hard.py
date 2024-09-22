@@ -57,7 +57,7 @@ class Cube(Figure):
     sides_count = 12
 
     def __init__(self, color, side_length):
-        super().__init__(color, [side_length] * 12)
+        super().__init__(color, *[side_length] * 12)
 
     def get_volume(self):
         side_length = self.get_sides()[0]
@@ -84,5 +84,3 @@ print(len(circle1))  # 15
 
 # Проверка объёма (куба):
 print(cube1.get_volume())
-
-
